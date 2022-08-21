@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS</title>
+    <style>
+      #caps {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: bolder;
+        position: fixed;
+        top: 200px;
+        /*left: 1000px;*/
+      }
+      .bottom {
+        position: relative;
+        top: 10000px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="caps">lower case</h1>
+    <h1 style="color: hsl(0, 100%, 50%)">HSL text color</h1>
+    <div style="background-color: rgba(0, 120, 0, 0.1)">Opacity 0.1</div>
+    <div style="background-color: green; opacity: 0.6">Opacity 0.6</div>
+    <div style="background-image: url('cat.jpg'); height: 800">
+      Thi sis a div
+    </div>
+    <div style="border-style: dashed; border-radius: 50px">This is dotted</div>
+    <div
+      class="bottom"
+      style="background-color: green; margin: 50px 50px; padding: 20px 40px"
+    >
+      This is a margin Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Voluptates mollitia ex unde, blanditiis odit asperiores, dolor nam
+      tempore, fugit quas suscipit ut iste reiciendis excepturi! At sint minima
+      possimus ad.
+    </div>
+  </body>
+</html>
