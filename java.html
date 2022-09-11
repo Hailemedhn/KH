@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <script>
+      let employee = [
+        {
+          id: 1,
+          name: "John",
+          age: 30,
+          designation: "manager",
+          salary: 78000,
+          phone: 0987654,
+        },
+        {
+          id: 6,
+          name: "Jane",
+          age: 36,
+          designation: "developer",
+          salary: 20000,
+          phone: 0917654,
+        },
+        {
+          id: 7,
+          name: "Jess",
+          age: 37,
+          designation: "accountant",
+          salary: 23000,
+          phone: 2987654,
+        },
+        {
+          id: 2,
+          name: "carl",
+          age: 40,
+          designation: "developer",
+          salary: 88000,
+          phone: 3987654,
+        },
+        {
+          id: 3,
+          name: "Mat",
+          age: 10,
+          designation: "developer",
+          salary: 98000,
+          phone: 4987654,
+        },
+        {
+          id: 4,
+          name: "George",
+          age: 20,
+          designation: "accountant",
+          salary: 18000,
+          phone: 5987654,
+        },
+        {
+          id: 5,
+          name: "Tonny",
+          age: 50,
+          designation: "janitor",
+          salary: 50000,
+          phone: 6987654,
+        },
+      ];
+      let developers = employee.filter(
+        (item) => item.designation == "developer"
+      );
+      console.log(developers);
+
+      let theYoung = employee.filter((item) => item.age < 30);
+      console.log(theYoung);
+      let theRich = employee.filter(
+        (item) => item.age < 30 && item.salary > 70000
+      );
+      console.log(theRich);
+      let accountant = employee.filter(
+        (item) => item.salary < 40000 && item.designation == "accountant"
+      );
+      console.log(accountant);
+      let id5 = employee.find((item) => item.id == 5);
+      console.log(id5);
+      let jess = employee.filter((item) => item.name == "Jess");
+      console.log(jess);
+    </script>
+  </body>
+</html>
